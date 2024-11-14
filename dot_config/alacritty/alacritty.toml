@@ -1,0 +1,15 @@
+[general]
+
+[window]
+padding = { x = 5, y = 3 }
+opacity = 0.90
+blur = false
+startup_mode = "SimpleFullscreen"
+
+[scrolling]
+history = 100000
+
+[font]
+size = 13
+normal = { family = "Hack Nerd Font", style = "Regular" }
+

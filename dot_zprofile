@@ -1,0 +1,8 @@
+
+export PATH="$HOME/.nodenv/shims:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
+
+export EDITOR="nvim"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
