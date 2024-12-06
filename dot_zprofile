@@ -1,6 +1,16 @@
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+
 export PATH="$HOME/.nodenv/shims:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/tools"
+export PATH="$PATH:$ANDROID_HOME/tools/bin"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 export EDITOR="nvim"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"

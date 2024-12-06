@@ -5,9 +5,10 @@ return {
   "yioneko/nvim-cmp",
   branch = "perf",
   event = "InsertEnter",
-  opts = function()
-    local cmp = require "cmp"
-    return {
+  config = function()
+    local cmp = require('cmp')
+
+    cmp.setup({
       mapping = {
         ["<c-n>"] = cmp.mapping.select_next_item(),
         ["<c-p>"] = cmp.mapping.select_prev_item(),
@@ -27,13 +28,22 @@ return {
           if vim.api.nvim_strwidth(item.abbr) > MAX_ABBR_WIDTH then
             item.abbr = vim.fn.strcharpart(item.abbr, 0, MAX_ABBR_WIDTH) .. "…"
           end
+
           if vim.api.nvim_strwidth(item.menu or "") > MAX_MENU_WIDTH then
             item.menu = vim.fn.strcharpart(item.menu, 0, MAX_MENU_WIDTH) .. "…"
           end
+
           return item
         end,
       },
-    }
+    })
+
+    cmp.setup.filetype({ "sql" }, {
+      sources = {
+        { name = "vim-dadbod-completion" },
+        { name = "buffer" },
+      }
+    })
   end,
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
