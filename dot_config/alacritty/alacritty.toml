@@ -15,6 +15,7 @@ padding = { x = 5, y = 3 }
 opacity = 0.90
 blur = false
 startup_mode = "Maximized"
+decorations = "Buttonless"
 
 [scrolling]
 history = 100000
