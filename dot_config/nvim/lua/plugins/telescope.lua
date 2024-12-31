@@ -13,7 +13,7 @@ return {
 
     require('telescope').setup({
       defaults = {
-        file_ignore_patterns = { 'node_modules', 'target', 'vendor/bundle' },
+        file_ignore_patterns = { 'node_modules', 'target', 'vendor/bundle', 'build' },
       },
     })
   end
