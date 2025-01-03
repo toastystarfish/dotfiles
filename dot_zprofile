@@ -13,5 +13,7 @@ export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 export EDITOR="nvim"
 
+export HOMEBREW_NO_AUTO_UDATE=1
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
