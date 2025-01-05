@@ -47,7 +47,7 @@ return {
     })
 
     require('mason-lspconfig').setup({
-      ensure_installed = {"lua_ls", "ts_ls", "html", "cssls", "ruby_lsp"},
+      ensure_installed = {"lua_ls", "ts_ls", "html", "cssls", "ruby_lsp", "eslint"},
       handlers = {
         -- this first function is the "default handler"
         -- it applies to every language server without a "custom handler"
