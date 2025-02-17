@@ -33,3 +33,7 @@ end, {
 -- see https://vim.fandom.com/wiki/Set_working_directory_to_the_current_file
 vim.keymap.set("n", "<leader>cd", "<cmd>lcd %:p:h<cr><cmd>pwd<cr>", { desc = "change cwd" })
 
+
+vim.keymap.set("n", "<leader>ww", "<cmd>:bd<cr>", { desc = "close current buffer" })
+vim.keymap.set("n", "<leader>wa", "<cmd>:%bd<cr>", { desc = "close all buffers" })
+vim.keymap.set("n", "<leader>we", "<cmd>:%bd|e#|bd#<cr>", { desc = "close all buffers except current" })
