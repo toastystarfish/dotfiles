@@ -54,6 +54,15 @@ return {
         function(server_name)
           require('lspconfig')[server_name].setup({})
         end,
+        ["lua_ls"] = function()
+          require('lspconfig')['lua_ls'].setup({
+            settings = {
+              diagnostics = {
+                global = { "vim" }
+              }
+            }
+          })
+        end,
       }
     })
   end
