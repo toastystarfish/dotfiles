@@ -4,15 +4,7 @@ return {
   dependencies = "nvim-tree/nvim-web-devicons",
   config = function()
     require("bufferline").setup {
-      highlights = require("catppuccin.groups.integrations.bufferline").get({
-        custom = {
-          all = {
-            fill = {
-              bg = "none"
-            }
-          }
-        }
-      }),
+      highlights = require("catppuccin.groups.integrations.bufferline").get(),
       options = {
         numbers = "none",
         close_command = "bdelete! %d",
