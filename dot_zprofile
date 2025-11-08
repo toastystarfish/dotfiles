@@ -1,7 +1,7 @@
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 
-export PATH="$HOME/.nodenv/shims:$PATH"
-export PATH="$HOME/.rbenv/shims:$PATH"
+# export PATH="$HOME/.nodenv/shims:$PATH"
+# export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH:$ANDROID_HOME/emulator"
@@ -17,3 +17,4 @@ export HOMEBREW_NO_AUTO_UDATE=1
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+eval "$(mise activate zsh)"
